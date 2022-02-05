@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./assets/apple.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Calc.</title>
+    <title>calculaNota.io</title>
   </head>
   <body>
     <main>
@@ -20,16 +21,72 @@
         <h1>calculaNota.io</h1>
       </div>
       <div class="notes">
-        <h2 class="notes-text"><span>notaAv1</span></h2>
-        <input
-          class="notes-box"
-          placeholder="Sua nota aqui, Ex: 7,5 ..."
-          type="number"
-          name="av1"
-          id="av1"
-        />
+        <div class="one-two">
+          <div class="note-one">
+            <div>
+              <h2 class="notes-text av1"><span>Nota Av1</span></h2>
+              <input
+                class="notes-box"
+                placeholder="Ex: 7,5 ..."
+                type="number"
+                name="av1"
+                id="av1"
+              />
+            </div>
+            <div class="aps-one">
+              <h2 class="notes-text aps1"><span>Aps</span></h2>
+              <input
+                class="notes-box"
+                placeholder="Ex: 1,8 ..."
+                type="number"
+                name="aps1"
+                id="aps1"
+              />
+            </div>
+          </div>
+          <div class="note-two">
+            <div>
+              <h2 class="notes-text av2"><span>Nota Av2</span></h2>
+              <input
+                class="notes-box"
+                placeholder="Ex: 7,5 ..."
+                type="number"
+                name="av2"
+                id="av2"
+              />
+            </div>
+            <div class="aps-two">
+              <h2 class="notes-text aps2"><span>Aps</span></h2>
+              <input
+                class="notes-box"
+                placeholder="Ex: 1,8 ..."
+                type="number"
+                name="aps2"
+                id="aps2"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="checkbox">
+          <input id="checkbox" type="checkbox" />
+          <label for="checkbox">Incluir nota av3</label>
+        </div>
+        <div class="av3">
+          <h2 class="notes-text"><span>Nota Av3</span></h2>
+          <input
+            class="notes-box"
+            placeholder="Ex: 7,5 ..."
+            type="number"
+            name="av3"
+            disabled
+            id="av3"
+          />
+        </div>
+      </div>
+      <div class="button">
+        <button>Calcular</button>
       </div>
     </main>
-    <script href="script/script.js"></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>
