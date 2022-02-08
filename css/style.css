@@ -211,11 +211,6 @@ main {
   align-items: center;
 }
 
-.final h3 {
-  filter: drop-shadow(0 0.4rem 0.4rem #0000002f);
-  opacity: 0.25;
-}
-
 .final h3 span {
   background-color: #353333;
   color: #eae2b7;
@@ -243,6 +238,12 @@ main {
 .result {
   width: 50%;
   padding-left: 1rem;
+  opacity: 0.25;
+}
+
+.result.on {
+  opacity: 1;
+  filter: drop-shadow(0 0.4rem 0.4rem #0000002f);
 }
 
 .legend {

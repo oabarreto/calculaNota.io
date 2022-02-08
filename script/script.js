@@ -6,13 +6,6 @@ const avToggle = document.querySelector(".av3");
 
 const disabled = document.querySelector("#av3");
 
-let noteOne = document.querySelector("#av1").valueAsNumber;
-let noteTwo = Number(document.querySelector("#av2").value);
-let noteThree = Number(document.querySelector("#av3").value);
-
-let apsOne = Number(document.querySelector("#aps1").value);
-let apsTwo = Number(document.querySelector("#aps2").value);
-
 const calcButton = document.querySelector(".button");
 
 let status = document.querySelector(".status");
@@ -24,6 +17,25 @@ check.addEventListener("click", function () {
   off = !off;
 });
 
-function sum(noteOne, noteTwo, noteThree, apsOne, apsTwo) {}
+calcButton.addEventListener("click", function () {
+  let noteOne = document.querySelector("#av1").valueAsNumber;
+  let noteTwo = document.querySelector("#av2").valueAsNumber;
+  let noteThree = document.querySelector("#av3").valueAsNumber;
 
-calcButton.addEventListener("click");
+  let apsOne = document.querySelector("#aps1").valueAsNumber;
+  let apsTwo = document.querySelector("#aps2").valueAsNumber;
+  let status = document.querySelector(".status");
+  let grades = document.querySelector(".grades");
+
+  const resToggle = document.querySelector(".result");
+
+  resToggle.classList.toggle("on");
+
+  let res = (noteOne + noteTwo + apsOne + apsTwo) / 2;
+
+  if (isNaN(res)) {
+    res = "...";
+  }
+
+  grades.innerHTML = res;
+});
