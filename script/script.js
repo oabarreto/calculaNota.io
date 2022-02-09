@@ -31,36 +31,43 @@ calcButton.addEventListener("click", function () {
 
   let res = 0;
 
-  let attention = off === true && res < 7;
-  let approved = res > 7;
-  let disapproved = res < 7;
-
   let statusText;
 
   resToggle.classList.add("on");
 
   if (off === true) {
     res = (noteOne + noteTwo + apsOne + apsTwo) / 2;
+
+    if (res >= 7) {
+      statusClass.classList.add("approved");
+      statusText = "Aprovado";
+    }
+
+    if (res < 7) {
+      statusClass.classList.add("attention");
+      statusText = "Av3";
+    }
   } else if (off === false) {
     let totalAv1 = noteOne + apsOne;
     let totalAv2 = noteTwo + apsTwo;
     let min = Math.min(totalAv1, totalAv2, noteThree);
+
     res = (totalAv1 + totalAv2 + noteThree - min) / 2;
+
+    if (res >= 7) {
+      statusClass.classList.add("approved");
+      statusText = "Aprovado";
+    }
+
+    if (res < 7) {
+      statusClass.classList.add("disapproved");
+      statusText = "Reprovado";
+    }
   }
 
   if (isNaN(res)) {
+    statusText = "...";
     res = "...";
-  }
-
-  if (attention) {
-    statusClass.classList.toggle(".attention");
-    statusText = "av3";
-  } else if (approved) {
-    statusClass.classList.toggle(".approved");
-    statusText = "Aprovado";
-  } else if (disapproved) {
-    statusClass.classList.toggle(".disapproved");
-    statusText = "Reprovado";
   }
 
   statusClass.innerHTML = statusText;
@@ -69,6 +76,9 @@ calcButton.addEventListener("click", function () {
 
 clearButton.addEventListener("click", function () {
   resToggle.classList.remove("on");
+  statusClass.classList.remove("approved");
+  statusClass.classList.remove("disapproved");
+  statusClass.classList.remove("attention");
 
   let form = document.querySelector(".notes-form").reset();
 

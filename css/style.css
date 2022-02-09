@@ -178,6 +178,16 @@ main {
   transition: 0.3s ease;
 }
 
+.button button:focus {
+  border: 2 px solid #eae2b7;
+  background-color: #b12121;
+  outline: none;
+}
+
+.clear {
+  margin-left: 2rem;
+}
+
 .button button:hover {
   background-color: #fcbf49;
   color: #f77f00;
@@ -221,7 +231,7 @@ main {
   border-radius: 5px 0 0 5px;
 }
 
-.final h3 .res-show {
+.result .res-show {
   background-color: #003049;
   color: #eae2b7;
   font-weight: 500;
@@ -254,14 +264,144 @@ main {
   margin-bottom: 2rem;
 }
 
-.final h3 .status.approved {
-  background-color: #50f25e;
+.status.approved {
+  background-color: #19c728;
 }
 
-.final h3 .status.disapproved {
+.status.disapproved {
   background-color: #cb3f3c;
 }
 
-.final h3 .attention {
+.status.attention {
   background-color: #fcbf49;
+}
+
+footer section {
+  width: 40vw;
+  height: calc(20vh - 3rem);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.link-icon {
+  font-size: 2.25rem;
+  color: #eae2b7;
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0.4rem 0.4rem #0000002f);
+}
+
+.link-icon:hover {
+  color: #fcbf49;
+}
+
+.dev {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #fcbf49;
+}
+
+.me {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: #fcbf49;
+}
+
+@media screen and (max-width: 1440px) {
+  main {
+    padding-top: 0.8rem;
+  }
+
+  .notes input {
+    margin-bottom: 1.5rem;
+  }
+
+  .notes-text {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    width: 50vw;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .title img {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    width: 85vw;
+  }
+
+  .title img {
+    width: 13%;
+  }
+
+  .result {
+    transform: scale(0.75) translateX(-5%);
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 90vw;
+  }
+
+  .title img {
+    width: 14%;
+  }
+
+  .dev-box {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .result {
+    transform: scale(0.7) translateX(-10%);
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    width: 95vw;
+  }
+
+  .title img {
+    width: 15%;
+  }
+
+  .dev-box {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .result {
+    transform: scale(0.6) translateX(-15%);
+    padding-left: 0;
+  }
 }
