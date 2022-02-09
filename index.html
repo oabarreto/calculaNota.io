@@ -20,82 +20,87 @@
         <img src="./assets/apple.svg" alt="Ilustração Maçã" />
         <h1>calculaNota.io</h1>
       </div>
-      <div class="notes">
-        <div class="one-two">
-          <div class="note-one">
-            <div>
-              <h2 class="notes-text av1"><span>Nota Av1</span></h2>
-              <input
-                class="notes-box"
-                placeholder="Ex: 7,5 ..."
-                type="number"
-                name="av1"
-                id="av1"
-              />
+      <form action="" class="notes-form">
+        <div class="notes">
+          <div class="one-two">
+            <div class="note-one">
+              <div>
+                <h2 class="notes-text av1"><span>Nota Av1</span></h2>
+                <input
+                  class="notes-box"
+                  placeholder="Ex: 7,5 ..."
+                  type="number"
+                  name="av1"
+                  id="av1"
+                />
+              </div>
+              <div class="aps-one">
+                <h2 class="notes-text aps1"><span>Aps</span></h2>
+                <input
+                  class="notes-box"
+                  placeholder="Ex: 1,8 ..."
+                  type="number"
+                  name="aps1"
+                  id="aps1"
+                />
+              </div>
             </div>
-            <div class="aps-one">
-              <h2 class="notes-text aps1"><span>Aps</span></h2>
-              <input
-                class="notes-box"
-                placeholder="Ex: 1,8 ..."
-                type="number"
-                name="aps1"
-                id="aps1"
-              />
-            </div>
-          </div>
-          <div class="note-two">
-            <div>
-              <h2 class="notes-text av2"><span>Nota Av2</span></h2>
-              <input
-                class="notes-box"
-                placeholder="Ex: 7,5 ..."
-                type="number"
-                name="av2"
-                id="av2"
-              />
-            </div>
-            <div class="aps-two">
-              <h2 class="notes-text aps2"><span>Aps</span></h2>
-              <input
-                class="notes-box"
-                placeholder="Ex: 1,8 ..."
-                type="number"
-                name="aps2"
-                id="aps2"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="checkbox">
-          <input id="checkbox" type="checkbox" />
-          <label for="checkbox">Incluir nota av3</label>
-        </div>
-        <div class="final">
-          <div class="av3">
-            <div>
-              <h2 class="notes-text"><span>Nota Av3</span></h2>
-              <input
-                class="notes-box"
-                placeholder="Ex: 7,5 ..."
-                type="number"
-                name="av3"
-                disabled
-                id="av3"
-              />
+            <div class="note-two">
+              <div>
+                <h2 class="notes-text av2"><span>Nota Av2</span></h2>
+                <input
+                  class="notes-box"
+                  placeholder="Ex: 7,5 ..."
+                  type="number"
+                  name="av2"
+                  id="av2"
+                />
+              </div>
+              <div class="aps-two">
+                <h2 class="notes-text aps2"><span>Aps</span></h2>
+                <input
+                  class="notes-box"
+                  placeholder="Ex: 1,8 ..."
+                  type="number"
+                  name="aps2"
+                  id="aps2"
+                />
+              </div>
             </div>
           </div>
-          <div class="result">
-            <h3><span>Status</span><span class="res-show status">...</span></h3>
-            <h3><span>Nota</span><span class="res-show grades">...</span></h3>
+          <div class="checkbox">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox">Incluir nota av3</label>
+          </div>
+          <div class="final">
+            <div class="av3">
+              <div>
+                <h2 class="notes-text"><span>Nota Av3</span></h2>
+                <input
+                  class="notes-box"
+                  placeholder="Ex: 7,5 ..."
+                  type="number"
+                  name="av3"
+                  disabled
+                  id="av3"
+                />
+              </div>
+            </div>
+            <div class="result">
+              <h3>
+                <span>Status</span><span class="res-show status">...</span>
+              </h3>
+              <h3><span>Nota</span><span class="res-show grades">...</span></h3>
+            </div>
+          </div>
+          <div class="legend">
+            <p>Status: "AV3" informa a necessidade de fazer a prova AV3.</p>
           </div>
         </div>
-        <div class="legend">
-          <p>Status: "AV3" informa a necessidade de fazer a prova AV3.</p>
-        </div>
-      </div>
+      </form>
       <div class="button">
-        <button>Calcular</button>
+        <button class="calc">Calcular</button>
+        <button class="clear">Limpar</button>
       </div>
     </main>
     <script src="./script/script.js"></script>

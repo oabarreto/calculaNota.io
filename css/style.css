@@ -253,3 +253,15 @@ main {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
+
+.final h3 .status.approved {
+  background-color: #50f25e;
+}
+
+.final h3 .status.disapproved {
+  background-color: #cb3f3c;
+}
+
+.final h3 .attention {
+  background-color: #fcbf49;
+}
