@@ -349,6 +349,17 @@ footer section {
   }
 }
 
+@media screen and (max-width: 510px) {
+  main {
+    width: 85vw;
+  }
+
+  .result {
+    transform: scale(0.9);
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 425px) {
   main {
     width: 85vw;
