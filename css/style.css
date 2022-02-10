@@ -34,7 +34,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin: 0 auto;
+  margin: 1.5rem auto;
 }
 
 .title img {
@@ -361,6 +361,18 @@ footer section {
   .result {
     transform: scale(0.75) translateX(-5%);
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .title {
+    margin: 1rem auto;
+  }
+
+  .dev-box {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
   }
 }
 
