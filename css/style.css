@@ -19,7 +19,7 @@ body {
 main {
   background-color: #f77f00;
   width: 40vw;
-  height: 80vh;
+  min-height: 80vh;
   margin: 0 auto;
   border-radius: 25px;
   display: flex;
@@ -278,7 +278,7 @@ main {
 
 footer section {
   width: 40vw;
-  height: calc(20vh - 3rem);
+  min-height: calc(20vh - 3rem);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
