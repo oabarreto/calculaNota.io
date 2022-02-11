@@ -40,11 +40,15 @@ calcButton.addEventListener("click", function () {
 
     if (res >= 7) {
       statusClass.classList.add("approved");
+      statusClass.classList.remove("disapproved");
+      statusClass.classList.remove("attention");
       statusText = "Aprovado";
     }
 
     if (res < 7) {
       statusClass.classList.add("attention");
+      statusClass.classList.remove("approved");
+      statusClass.classList.remove("disapproved");
       statusText = "Av3";
     }
   } else if (off === false) {
@@ -56,11 +60,15 @@ calcButton.addEventListener("click", function () {
 
     if (res >= 7) {
       statusClass.classList.add("approved");
+      statusClass.classList.remove("disapproved");
+      statusClass.classList.remove("attention");
       statusText = "Aprovado";
     }
 
     if (res < 7) {
       statusClass.classList.add("disapproved");
+      statusClass.classList.remove("approved");
+      statusClass.classList.remove("attention");
       statusText = "Reprovado";
     }
   }
@@ -76,6 +84,10 @@ calcButton.addEventListener("click", function () {
 
 clearButton.addEventListener("click", function () {
   resToggle.classList.remove("on");
+
+  avToggle.classList.toggle("on", off);
+  off = !off;
+
   statusClass.classList.remove("approved");
   statusClass.classList.remove("disapproved");
   statusClass.classList.remove("attention");
