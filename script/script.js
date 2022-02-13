@@ -85,8 +85,14 @@ calcButton.addEventListener("click", function () {
 clearButton.addEventListener("click", function () {
   resToggle.classList.remove("on");
 
-  avToggle.classList.toggle("on", off);
-  off = !off;
+  if (!off) {
+    document.getElementById("checkbox").checked = false;
+    off = !off;
+  }
+
+  avToggle.classList.remove("on", !off);
+
+  disabled.setAttribute("disabled", !off);
 
   statusClass.classList.remove("approved");
   statusClass.classList.remove("disapproved");
