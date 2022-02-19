@@ -79,7 +79,7 @@ calcButton.addEventListener("click", function () {
   }
 
   statusClass.innerHTML = statusText;
-  grades.innerHTML = res;
+  grades.innerHTML = res.toFixed(1);
 });
 
 clearButton.addEventListener("click", function () {
