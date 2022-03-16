@@ -14,7 +14,7 @@ _&nbsp;_ _&nbsp;_ _&nbsp;_ _&nbsp;_<img src="https://cdn.jsdelivr.net/gh/devicon
 <br>
 
 
-###  Acessar aplicação (on vercel)  _&nbsp;_  --> _&nbsp;_  [https://calculanotaio.vercel.app/](https://beasy-box.vercel.app/)
+###  Acessar aplicação (on vercel)  _&nbsp;_  --> _&nbsp;_  [calculaNota.io](https://calculanotaio.vercel.app/)
 
 <br>
 
