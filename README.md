@@ -4,7 +4,7 @@
 
 #### Calculadora das suas notas no período na "Facul".
 
-- <strong>calculaNota</strong> foi desenvolvida a partir de uma ideia para solucionar um problema simples mais bastante recorrente nas turmais e períodos iniciais em minha faculdade, que era o cálculo de notas dos trabalhos acadêmicos (provas AV's) e notas de atividades praticas  (APS's). Para os alunos pouco familiarizados com termos e critérios, é comum uma certa confusão, essa aplicação traz a resolução deste problema inicialmente, futuramente pretendo implementar novas funcionalidades. 
+- <strong>calculaNota</strong> foi desenvolvida a partir de uma ideia para solucionar um problema simples mais bastante recorrente nas turmas e períodos iniciais em minha faculdade, que era o cálculo de notas dos trabalhos acadêmicos (provas AV's) e notas de atividades praticas  (APS's). Para os alunos pouco familiarizados com termos e critérios, é comum uma certa confusão, essa aplicação traz a resolução deste problema inicialmente, futuramente pretendo implementar novas funcionalidades. 
 
 - [x] Responsivo;
 
